@@ -1,0 +1,169 @@
+/* Contenedor del cuestionario */
+.quiz-container {
+  max-width: 800px;
+  background-color: #ffffff;
+  margin: 30px auto 80px auto;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+}
+
+/* Título del cuestionario */
+.quiz-container h2 {
+  color: #0d3b66; /* Azul oscuro */
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Cada pregunta */
+.question {
+  margin-bottom: 20px;
+}
+
+/* Texto de la pregunta */
+.question p {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  color: #0d3b66; /* Azul oscuro */
+}
+
+/* Estilos para las opciones de respuesta */
+.question label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 6px 10px;
+  border-radius: 5px;
+}
+
+/* Cambio de fondo al pasar el mouse sobre las opciones */
+.question label:hover {
+  background-color: #f1f4f9; /* Azul muy claro pastel */
+}
+
+/* Fondo si está seleccionada */
+.question input[type="radio"]:checked + label {
+  background-color: #d9e3f1; /* Pastel azul suave */
+}
+
+/* Botón para calificar */
+.btn-submit {
+  background-color: #0d3b66; /* Azul oscuro */
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #0a2c4d; /* Azul más oscuro */
+}
+
+/* Resultado de la evaluación */
+.result {
+  margin-top: 25px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #8b5e3c; /* Café */
+}
+
+/* Enlaces en el header */
+header a {
+  color: #0d3b66; /* Azul oscuro */
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+header a:hover {
+  color: #8b5e3c; /* Café */
+}
+
+/* Contenedor del artículo (texto previo al quiz) */
+article {
+  max-width: 800px;
+  background-color: #ffffff;
+  margin: 30px auto 20px auto;
+  padding: 25px 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Título principal dentro del artículo */
+article h2 {
+  color: #0d3b66; /* Azul oscuro */
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+/* Subtítulos dentro del artículo */
+article h3 {
+  color: #8b5e3c; /* Café */
+  font-size: 1.5rem;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #0d3b66;
+  padding-bottom: 5px;
+}
+
+/* Sub-subtítulos */
+article h4 {
+  color: #0d3b66; /* Azul oscuro */
+  font-size: 1.2rem;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+/* Párrafos */
+article p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+/* Listas ordenadas */
+article ol {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+/* Listas desordenadas */
+article ul {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+/* Ítems de lista */
+article ul li,
+article ol li {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+/* Enlaces dentro del artículo */
+article a {
+  color: #0d3b66;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+article a:hover {
+  color: #8b5e3c;
+}

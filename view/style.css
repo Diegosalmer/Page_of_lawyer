@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url('../img/Abogado.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #2c2c2c;
+  line-height: 1.6;
+}
+
+/* Contenedores con fondo translúcido */
+header,
+#introduccion,
+#contenido,
+main,
+footer,
+.card {
+  background-color: rgba(249, 247, 241, 0.95); /* blanco cálido */
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+}
+
+/* Header */
+header {
+  background-color: #0d3b66; /* azul oscuro */
+  color: #ffffff;
+  padding: 24px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+.developer-info {
+  font-style: italic;
+  font-size: 1rem;
+  color: #d4a373; /* dorado suave */
+}
+
+/* Secciones */
+#introduccion,
+#contenido {
+  margin: 30px auto;
+  padding: 24px;
+  max-width: 850px;
+}
+
+#introduccion h2,
+#contenido h2 {
+  font-size: 2rem;
+  color: #8b5e3c; /* café */
+  margin-bottom: 20px;
+}
+
+/* Lista y enlaces */
+ul {
+  margin-left: 24px;
+  list-style-type: disc;
+}
+
+ul li {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+
+a {
+  color: #0d3b66; /* azul oscuro */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #8b5e3c; /* café */
+}
+
+/* Botón reiniciar (si aplica) */
+.btn-reset {
+  background-color: #e0e0e0;
+  color: #222;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 18px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-reset:hover {
+  background-color: #d4a373;
+  color: white;
+}
+
+/* Cards */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-left: 6px solid #0d3b66;
+  padding: 20px;
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card h3 {
+  font-size: 1.4rem;
+  color: #0d3b66;
+}
+
+.card h3 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card h3 a:hover {
+  color: #8b5e3c;
+}
+
+.card p {
+  margin-top: 10px;
+  font-size: 1.05rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Footer */
+footer {
+  background-color: #0d3b66;
+  color: #fff;
+  text-align: center;
+  padding: 12px;
+  font-size: 0.95rem;
+  margin-top: 40px;
+}
+
+.highlight-card {
+  background-color: #f9f7f1; /* blanco cálido */
+  border-left: 8px solid #8b5e3c; /* borde café */
+  padding: 30px 24px;
+  border-radius: 12px;
+  margin: 40px auto 30px auto;
+  max-width: 900px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  text-align: center;
+}
+
+.highlight-card h2 {
+  font-size: 2.2rem;
+  color: #0d3b66; /* azul oscuro */
+  margin-bottom: 14px;
+}
+
+.highlight-card p {
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.7;
+}
